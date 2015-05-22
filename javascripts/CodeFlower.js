@@ -1,4 +1,5 @@
 var CodeFlower = function(selector, w, h) {
+  debugger
   this.w = w;
   this.h = h;
 
