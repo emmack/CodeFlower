@@ -16,7 +16,11 @@ var convertFromClocToJSON = function(data) {
     var cols = line.split(',');
     var filename = cols[1];
     if (!filename) return;
+<<<<<<< HEAD
     var elements = filename.split('/');
+=======
+    var elements = filename.split(/[\/\\]/);
+>>>>>>> master
     var current = json;
     elements.forEach(function(element) {
       if (!current[element]) {
@@ -51,7 +55,11 @@ var convertFromWcToJSON = function(data) {
       filename = cols[1];
       if (filename === "total") return;
       if (!filename) return;
+<<<<<<< HEAD
       elements = filename.split('/');
+=======
+      elements = filename.split(/[\/\\]/);
+>>>>>>> master
       current = json;
       elements.forEach(function(element) {
           if (!current[element]) {
