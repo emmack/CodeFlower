@@ -62,14 +62,7 @@ line.link {
           </fieldset>
         </form>
         <div id="visualization"></div>
-        <h2>Purpose</h2>
-        <ul class="unstyled">
-          <li>Did you ever dive into an existing project and wish you could have a bird's eye view of the whole code?</li>
-          <li>Did you ever have to refactor a large application and wish you knew where to start?</li>
-          <li>Did you ever look for a visualization that would help you communicate visually with your teammates about a repository?</li>
-        </ul>
-        <p>CodeFlowers tries to answer these needs. Also, it tries to make code look beautiful, but that's another story.</p>
-        <h2>Usage</h2>
+ 
         <p>To create a CodeFlower, include the <code>CodeFlower.js</code> file together with <code>d3.js</code>, just like in this page. Create a new CodeFlower instance using a CSS selector (of the div where the flower should be inserted), and the width and height of the desired visualization. Then, bind JSON data to the flower using <code>CodeFlower.update()</code>, and you're done.</p>
         <pre>
 var myFlower = new CodeFlower("#visualization", 300, 200);
